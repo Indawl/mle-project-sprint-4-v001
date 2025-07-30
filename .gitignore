@@ -173,3 +173,6 @@ catboost_info/time_left.tsv
 catboost_info/learn_error.tsv
 catboost_info/catboost_training.json
 cb_model
+
+!app/test/test_service.log
+!test_service.log
