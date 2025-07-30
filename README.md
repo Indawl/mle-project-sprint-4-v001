@@ -46,12 +46,12 @@ python recsys/load_data.py
 
 # Сервис рекомендаций
 
-Код сервиса рекомендаций находится в файле `app/src/recommendations_service.py`.
+Код сервиса рекомендаций находится в файле `recommendations_service.py`.
 
 Запустить сервис можно командой:
 
 ```
-uvicorn app.src.recommendations_service:app
+uvicorn recommendations_service:app
 ```
 
 Сервис будет доступен по адресу: `http://127.0.0.1:8000`
@@ -67,12 +67,12 @@ uvicorn app.src.recommendations_service:app
 
 # Инструкции для тестирования сервиса
 
-Код для тестирования сервиса находится в файле `app/test/test_service.py`.
+Код для тестирования сервиса находится в файле `test_service.py`.
 
 Запустить тест можно командой:
 
 ```
-python app/test/test_service.py
+python test_service.py
 ```
 
 Лог тестирования сохраняется в `test_service.log` текущей папки
@@ -81,8 +81,8 @@ python app/test/test_service.py
 
 | Путь | Описание |
 |------|----------|
-| `app/src/recommendations_service.py` | Микросервис по рекомендациям |
-| `app/test/test_service.py` | Тест микросервиса |
+| `recommendations_service.py` | Микросервис по рекомендациям |
+| `test_service.py` | Тест микросервиса |
 | `recsys/load_data.py` | Начальная загрузка данных |
 | `utils/event_store.py` | Обработчик событий |
 | `utils/recommendations.py` | Класс по работе с рекомендациями |
